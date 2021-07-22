@@ -3,7 +3,7 @@
 {-# OPTIONS_GHC -Wno-unused-imports #-}
 module Main where
 
-import Language.Haskell.TH (runQ)
+import Language.Haskell.TH (TExp, runQ)
 
 import Numeric.AD.TH (decode)
 

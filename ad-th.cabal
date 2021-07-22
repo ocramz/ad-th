@@ -22,28 +22,29 @@ library
   build-depends:       base >= 4.7 && < 5
                      , algebraic-graphs
                      , containers
-                     , haskell-src-meta
+                     , data-reify
+                     -- , haskell-src-meta
                      , template-haskell
 
-executable ad-th
-  default-language:    Haskell2010
-  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
-  hs-source-dirs:      app
-  main-is:             Main.hs
-  build-depends:       base
-                     , ad-th
-                     , template-haskell >= 2.16
+-- executable ad-th
+--   default-language:    Haskell2010
+--   ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+--   hs-source-dirs:      app
+--   main-is:             Main.hs
+--   build-depends:       base
+--                      , ad-th
+--                      , template-haskell >= 2.16
 
-test-suite spec
-  default-language:    Haskell2010
-  ghc-options:         -Wall
-  type:                exitcode-stdio-1.0
-  hs-source-dirs:      test
-  main-is:             Spec.hs
-  build-depends:       base
-                     , ad-th
-                     , hspec
-                     , QuickCheck
+-- test-suite spec
+--   default-language:    Haskell2010
+--   ghc-options:         -Wall
+--   type:                exitcode-stdio-1.0
+--   hs-source-dirs:      test
+--   main-is:             Spec.hs
+--   build-depends:       base
+--                      , ad-th
+--                      , hspec
+--                      , QuickCheck
 
 source-repository head
   type:     git
